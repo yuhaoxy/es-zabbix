@@ -1,0 +1,6 @@
+- name: config ini
+  template: src=es_zabbix/template/es_stats_zabbix.ini dest=/etc/zabbix/scripts/
+- name: config conf
+  template: src=es_zabbix/template/es_stats_zabbix.conf dest=/etc/zabbix/zabbix_agentd.conf.d/
+  notify:
+    - restart zabbix service

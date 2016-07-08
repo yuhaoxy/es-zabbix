@@ -1,0 +1,9 @@
+---
+- hosts: eszabbix
+  remote_user: hao.yu02
+ # sudo: True
+  gather_facts: True
+  become: yes
+  become_method: sudo
+  roles:
+    - es_zabbix

@@ -1,0 +1,6 @@
+- name: install pip
+  yum: name={{ item }} state=latest
+  with_items:
+    - python-pip
+- name: install es_stats_zabbix
+  command: pip install es_stats_zabbix
