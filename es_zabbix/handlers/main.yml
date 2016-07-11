@@ -1,2 +1,2 @@
 - name: restart zabbix service
-  service: name=zabbix state=restarted
+  command: /etc/init.d/zabbix-agent restart
